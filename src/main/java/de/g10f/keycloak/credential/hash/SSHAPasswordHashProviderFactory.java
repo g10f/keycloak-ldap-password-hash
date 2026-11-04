@@ -9,7 +9,7 @@ import org.keycloak.models.KeycloakSessionFactory;
 /**
  * SSHA Password Hash provider
  *
- * @author <a href"mailto:mail@g10f.de">Gunnar Scherf</a>
+ * @author <a href="mailto:mail@g10f.de">Gunnar Scherf</a>
  */
 public class SSHAPasswordHashProviderFactory implements PasswordHashProviderFactory {
 
