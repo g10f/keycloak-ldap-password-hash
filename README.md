@@ -46,10 +46,16 @@ The integration tests use the Keycloak test framework, which downloads and start
 distribution of `keycloak.version`. They import users with LDAP hashes, log in with the password grant
 and check the stored hash afterwards, with and without `hashAlgorithm(ssha)`.
 
+## Release
+
+`git release patch|minor|major` (the first one: `git release 1.0.0`) pushes the tag `X.Y.Z`. The GitHub
+workflow builds the tag as version `X.Y.Z`, runs all tests and attaches the jar to the GitHub release.
+Local builds without `-Drevision` get the version `dev-SNAPSHOT`.
+
 ## Installation
 
-Copy `target/keycloak-ldap-password-hash-<version>.jar` into the `providers/` directory of the Keycloak
-installation and run `kc.sh build`. The jar has no dependencies besides Keycloak.
+Copy the jar from the GitHub release into the `providers/` directory of the Keycloak installation and run
+`kc.sh build`. The jar has no dependencies besides Keycloak.
 
 ## Usage
 

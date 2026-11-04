@@ -4,9 +4,11 @@
 
     <groupId>de.g10f</groupId>
     <artifactId>keycloak-ldap-password-hash</artifactId>
-    <version>1.0.0</version>
+    <!-- The release version comes from the git tag: CI builds a tag X.Y.Z with -Drevision=X.Y.Z -->
+    <version>${revision}</version>
 
     <properties>
+        <revision>dev-SNAPSHOT</revision>
         <!-- Keycloak version to compile and run the integration tests against. -->
         <keycloak.version>26.8.1</keycloak.version>
         <surefire.plugin.version>3.5.6</surefire.plugin.version>
