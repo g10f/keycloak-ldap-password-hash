@@ -33,7 +33,7 @@ policy, so existing rules have to be included, e.g. `length(12) and hashAlgorith
 
 Built and tested against Keycloak 26.8.1 (`keycloak.version` in `pom.xml`). The project has its own
 version; the password hash SPI has been unchanged since Keycloak 26.0. For a new Keycloak version, raise
-`keycloak.version` and run the integration tests. Requires Java 21.
+`keycloak.version` and run the integration tests. Built for Java 17, like Keycloak itself.
 
 ## Build and tests
 

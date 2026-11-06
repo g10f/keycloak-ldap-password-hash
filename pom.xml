@@ -14,7 +14,7 @@
         <surefire.plugin.version>3.5.6</surefire.plugin.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.release>17</maven.compiler.release>
 
         <!-- JVM arguments required by the Keycloak test framework (see its GETTING_STARTED.md) -->
         <testframework.surefire.args>
